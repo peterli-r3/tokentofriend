@@ -1,0 +1,160 @@
+[INFO ] 2020-11-20T05:20:43,108 [Thread-3] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b6ec132: startup date [Thu Nov 19 23:42:04 EST 2020]; root of context hierarchy
+[INFO ] 2020-11-20T05:20:43,127 [Thread-3] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[WARN ] 2020-11-20T05:20:43,129 [Thread-3] CommonAnnotationBeanPostProcessor - Invocation of destroy method failed on bean with name 'nodeRPCConnection': kotlin.UninitializedPropertyAccessException: lateinit property rpcConnection has not been initialized
+[INFO ] 2020-11-20T05:21:12,857 [main] ServerKt - Starting ServerKt on MacBook-Dev-12.local with PID 27542 (/Users/peterli/Desktop/tokentofriend/clients/build/classes/kotlin/main started by peterli in /Users/peterli/Desktop/tokentofriend/clients)
+[INFO ] 2020-11-20T05:21:12,864 [main] ServerKt - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-20T05:21:12,915 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b6ec132: startup date [Fri Nov 20 00:21:12 EST 2020]; root of context hierarchy
+[INFO ] 2020-11-20T05:21:13,877 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
+[INFO ] 2020-11-20T05:21:13,893 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
+[INFO ] 2020-11-20T05:21:13,904 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2020-11-20T05:21:13,905 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2020-11-20T05:21:13,914 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/peterli/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2020-11-20T05:21:14,103 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-11-20T05:21:14,103 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1190 ms
+[INFO ] 2020-11-20T05:21:14,210 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-11-20T05:21:14,213 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-11-20T05:21:14,214 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-11-20T05:21:14,214 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-11-20T05:21:14,214 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-11-20T05:21:16,971 [main] RPCClient - Startup took 800 msec
+[INFO ] 2020-11-20T05:21:17,233 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-11-20T05:21:17,424 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b6ec132: startup date [Fri Nov 20 00:21:12 EST 2020]; root of context hierarchy
+[INFO ] 2020-11-20T05:21:17,497 [main] RequestMappingHandlerMapping - Mapped "{[/peers],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, java.util.List<java.lang.String>> com.tokentofriend.webserver.Controller.getPeers()
+[INFO ] 2020-11-20T05:21:17,498 [main] RequestMappingHandlerMapping - Mapped "{[/me],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, java.lang.String> com.tokentofriend.webserver.Controller.whoami()
+[INFO ] 2020-11-20T05:21:17,499 [main] RequestMappingHandlerMapping - Mapped "{[/createToken],methods=[POST]}" onto public final org.springframework.http.ResponseEntity<java.lang.String> com.tokentofriend.webserver.Controller.createToken(java.lang.String) throws java.lang.Exception
+[INFO ] 2020-11-20T05:21:17,500 [main] RequestMappingHandlerMapping - Mapped "{[/retrieve],methods=[POST]}" onto public final org.springframework.http.ResponseEntity<java.lang.String> com.tokentofriend.webserver.Controller.retrieveToken(java.lang.String) throws java.lang.Exception
+[INFO ] 2020-11-20T05:21:17,503 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-11-20T05:21:17,504 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2020-11-20T05:21:17,534 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-11-20T05:21:17,534 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-11-20T05:21:17,585 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2020-11-20T05:21:17,914 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2020-11-20T05:21:17,926 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
+[INFO ] 2020-11-20T05:21:17,944 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2020-11-20T05:21:17,958 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
+[INFO ] 2020-11-20T05:21:17,961 [main] ServerKt - Started ServerKt in 5.791 seconds (JVM running for 6.437)
+[INFO ] 2020-11-20T05:21:24,185 [http-nio-10050-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2020-11-20T05:21:24,186 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2020-11-20T05:21:24,200 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+[INFO ] 2020-11-20T05:22:04,028 [Thread-3] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b6ec132: startup date [Fri Nov 20 00:21:12 EST 2020]; root of context hierarchy
+[INFO ] 2020-11-20T05:22:04,030 [Thread-3] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[WARN ] 2020-11-20T05:22:04,031 [Thread-3] CommonAnnotationBeanPostProcessor - Invocation of destroy method failed on bean with name 'nodeRPCConnection': kotlin.UninitializedPropertyAccessException: lateinit property rpcConnection has not been initialized
+[INFO ] 2020-11-20T05:22:31,786 [main] ServerKt - Starting ServerKt on MacBook-Dev-12.local with PID 27697 (/Users/peterli/Desktop/tokentofriend/clients/build/classes/kotlin/main started by peterli in /Users/peterli/Desktop/tokentofriend/clients)
+[INFO ] 2020-11-20T05:22:31,792 [main] ServerKt - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-20T05:22:31,835 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b6ec132: startup date [Fri Nov 20 00:22:31 EST 2020]; root of context hierarchy
+[INFO ] 2020-11-20T05:22:32,660 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
+[INFO ] 2020-11-20T05:22:32,673 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
+[INFO ] 2020-11-20T05:22:32,682 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2020-11-20T05:22:32,683 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2020-11-20T05:22:32,691 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/peterli/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2020-11-20T05:22:32,838 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-11-20T05:22:32,838 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1005 ms
+[INFO ] 2020-11-20T05:22:32,930 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-11-20T05:22:32,933 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-11-20T05:22:32,933 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-11-20T05:22:32,934 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-11-20T05:22:32,934 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-11-20T05:22:34,925 [main] RPCClient - Startup took 661 msec
+[INFO ] 2020-11-20T05:22:35,166 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-11-20T05:22:35,333 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b6ec132: startup date [Fri Nov 20 00:22:31 EST 2020]; root of context hierarchy
+[INFO ] 2020-11-20T05:22:35,422 [main] RequestMappingHandlerMapping - Mapped "{[/peers],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, java.util.List<java.lang.String>> com.tokentofriend.webserver.Controller.getPeers()
+[INFO ] 2020-11-20T05:22:35,423 [main] RequestMappingHandlerMapping - Mapped "{[/me],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, java.lang.String> com.tokentofriend.webserver.Controller.whoami()
+[INFO ] 2020-11-20T05:22:35,424 [main] RequestMappingHandlerMapping - Mapped "{[/createToken],methods=[POST]}" onto public final org.springframework.http.ResponseEntity<java.lang.String> com.tokentofriend.webserver.Controller.createToken(java.lang.String) throws java.lang.Exception
+[INFO ] 2020-11-20T05:22:35,424 [main] RequestMappingHandlerMapping - Mapped "{[/retrieve],methods=[POST]}" onto public final org.springframework.http.ResponseEntity<java.lang.String> com.tokentofriend.webserver.Controller.retrieveToken(java.lang.String) throws java.lang.Exception
+[INFO ] 2020-11-20T05:22:35,428 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2020-11-20T05:22:35,428 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-11-20T05:22:35,452 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-11-20T05:22:35,452 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-11-20T05:22:35,493 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2020-11-20T05:22:35,790 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2020-11-20T05:22:35,802 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
+[INFO ] 2020-11-20T05:22:35,818 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2020-11-20T05:22:35,832 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
+[INFO ] 2020-11-20T05:22:35,835 [main] ServerKt - Started ServerKt in 4.686 seconds (JVM running for 5.269)
+[INFO ] 2020-11-20T05:22:56,820 [http-nio-10050-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2020-11-20T05:22:56,821 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2020-11-20T05:22:56,840 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+[INFO ] 2020-11-20T05:23:38,077 [Thread-3] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b6ec132: startup date [Fri Nov 20 00:22:31 EST 2020]; root of context hierarchy
+[INFO ] 2020-11-20T05:23:38,079 [Thread-3] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[WARN ] 2020-11-20T05:23:38,080 [Thread-3] CommonAnnotationBeanPostProcessor - Invocation of destroy method failed on bean with name 'nodeRPCConnection': kotlin.UninitializedPropertyAccessException: lateinit property rpcConnection has not been initialized
+[INFO ] 2020-11-20T05:24:03,426 [main] ServerKt - Starting ServerKt on MacBook-Dev-12.local with PID 27854 (/Users/peterli/Desktop/tokentofriend/clients/build/classes/kotlin/main started by peterli in /Users/peterli/Desktop/tokentofriend/clients)
+[INFO ] 2020-11-20T05:24:03,432 [main] ServerKt - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-20T05:24:03,477 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b6ec132: startup date [Fri Nov 20 00:24:03 EST 2020]; root of context hierarchy
+[INFO ] 2020-11-20T05:24:04,333 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
+[INFO ] 2020-11-20T05:24:04,347 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
+[INFO ] 2020-11-20T05:24:04,357 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2020-11-20T05:24:04,357 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2020-11-20T05:24:04,366 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/peterli/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2020-11-20T05:24:04,524 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-11-20T05:24:04,524 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1049 ms
+[INFO ] 2020-11-20T05:24:04,618 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-11-20T05:24:04,620 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-11-20T05:24:04,621 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-11-20T05:24:04,621 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-11-20T05:24:04,621 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-11-20T05:24:06,796 [main] RPCClient - Startup took 717 msec
+[INFO ] 2020-11-20T05:24:07,043 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-11-20T05:24:07,224 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b6ec132: startup date [Fri Nov 20 00:24:03 EST 2020]; root of context hierarchy
+[INFO ] 2020-11-20T05:24:07,301 [main] RequestMappingHandlerMapping - Mapped "{[/me],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, java.lang.String> com.tokentofriend.webserver.Controller.whoami()
+[INFO ] 2020-11-20T05:24:07,302 [main] RequestMappingHandlerMapping - Mapped "{[/peers],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, java.util.List<java.lang.String>> com.tokentofriend.webserver.Controller.getPeers()
+[INFO ] 2020-11-20T05:24:07,303 [main] RequestMappingHandlerMapping - Mapped "{[/createToken],methods=[POST]}" onto public final org.springframework.http.ResponseEntity<java.lang.String> com.tokentofriend.webserver.Controller.createToken(java.lang.String) throws java.lang.Exception
+[INFO ] 2020-11-20T05:24:07,303 [main] RequestMappingHandlerMapping - Mapped "{[/retrieve],methods=[POST]}" onto public final org.springframework.http.ResponseEntity<java.lang.String> com.tokentofriend.webserver.Controller.retrieveToken(java.lang.String) throws java.lang.Exception
+[INFO ] 2020-11-20T05:24:07,306 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-11-20T05:24:07,307 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2020-11-20T05:24:07,331 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-11-20T05:24:07,331 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-11-20T05:24:07,377 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2020-11-20T05:24:07,657 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2020-11-20T05:24:07,670 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
+[INFO ] 2020-11-20T05:24:07,687 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2020-11-20T05:24:07,700 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
+[INFO ] 2020-11-20T05:24:07,703 [main] ServerKt - Started ServerKt in 4.946 seconds (JVM running for 5.538)
+[INFO ] 2020-11-20T05:24:23,980 [http-nio-10050-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2020-11-20T05:24:23,980 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2020-11-20T05:24:23,994 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+[WARN ] 2020-11-20T05:26:21,140 [background-preinit] Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+[INFO ] 2020-11-20T05:26:21,252 [main] ServerKt - Starting ServerKt on MacBook-Dev-12.local with PID 28072 (/Users/peterli/Desktop/tokentofriend/clients/build/classes/kotlin/main started by peterli in /Users/peterli/Desktop/tokentofriend/clients)
+[INFO ] 2020-11-20T05:26:21,253 [main] ServerKt - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-20T05:26:21,307 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c44c582: startup date [Fri Nov 20 00:26:21 EST 2020]; root of context hierarchy
+[INFO ] 2020-11-20T05:26:22,243 [main] TomcatWebServer - Tomcat initialized with port(s): 10053 (http)
+[INFO ] 2020-11-20T05:26:22,255 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10053"]
+[INFO ] 2020-11-20T05:26:22,264 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2020-11-20T05:26:22,265 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2020-11-20T05:26:22,273 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/peterli/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2020-11-20T05:26:22,441 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-11-20T05:26:22,441 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1137 ms
+[INFO ] 2020-11-20T05:26:22,533 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-11-20T05:26:22,537 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-11-20T05:26:22,538 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-11-20T05:26:22,538 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-11-20T05:26:22,538 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-11-20T05:26:24,945 [main] RPCClient - Startup took 757 msec
+[INFO ] 2020-11-20T05:26:25,214 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-11-20T05:26:25,404 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c44c582: startup date [Fri Nov 20 00:26:21 EST 2020]; root of context hierarchy
+[INFO ] 2020-11-20T05:26:25,479 [main] RequestMappingHandlerMapping - Mapped "{[/peers],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, java.util.List<java.lang.String>> com.tokentofriend.webserver.Controller.getPeers()
+[INFO ] 2020-11-20T05:26:25,480 [main] RequestMappingHandlerMapping - Mapped "{[/me],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, java.lang.String> com.tokentofriend.webserver.Controller.whoami()
+[INFO ] 2020-11-20T05:26:25,481 [main] RequestMappingHandlerMapping - Mapped "{[/createToken],methods=[POST]}" onto public final org.springframework.http.ResponseEntity<java.lang.String> com.tokentofriend.webserver.Controller.createToken(java.lang.String) throws java.lang.Exception
+[INFO ] 2020-11-20T05:26:25,481 [main] RequestMappingHandlerMapping - Mapped "{[/retrieve],methods=[POST]}" onto public final org.springframework.http.ResponseEntity<java.lang.String> com.tokentofriend.webserver.Controller.retrieveToken(java.lang.String) throws java.lang.Exception
+[INFO ] 2020-11-20T05:26:25,485 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-11-20T05:26:25,485 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2020-11-20T05:26:25,509 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-11-20T05:26:25,509 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-11-20T05:26:25,560 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2020-11-20T05:26:25,722 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2020-11-20T05:26:25,855 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10053"]
+[INFO ] 2020-11-20T05:26:25,870 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2020-11-20T05:26:25,883 [main] TomcatWebServer - Tomcat started on port(s): 10053 (http) with context path ''
+[INFO ] 2020-11-20T05:26:25,887 [main] ServerKt - Started ServerKt in 5.274 seconds (JVM running for 5.893)
+[INFO ] 2020-11-20T05:26:27,105 [http-nio-10053-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2020-11-20T05:26:27,107 [http-nio-10053-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2020-11-20T05:26:27,124 [http-nio-10053-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+[WARN ] 2020-11-20T05:31:35,988 [Thread-1 (ActiveMQ-client-factory-threads-673412242)] client - AMQ212037: Connection failure has been detected: AMQ119015: The connection was disconnected because of server shutdown [code=DISCONNECTED]
+[WARN ] 2020-11-20T05:31:35,992 [Thread-1 (ActiveMQ-client-factory-threads-673412242)] RPCClientProxyHandler - Terminating observables.
+[WARN ] 2020-11-20T05:31:36,680 [Thread-1 (ActiveMQ-client-factory-threads-671959170)] client - AMQ212037: Connection failure has been detected: AMQ119015: The connection was disconnected because of server shutdown [code=DISCONNECTED]
+[WARN ] 2020-11-20T05:31:36,682 [Thread-1 (ActiveMQ-client-factory-threads-671959170)] RPCClientProxyHandler - Terminating observables.
+[INFO ] 2020-11-20T05:31:38,743 [Thread-3] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c44c582: startup date [Fri Nov 20 00:26:21 EST 2020]; root of context hierarchy
+[INFO ] 2020-11-20T05:31:38,745 [Thread-3] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[WARN ] 2020-11-20T05:31:38,746 [Thread-3] CommonAnnotationBeanPostProcessor - Invocation of destroy method failed on bean with name 'nodeRPCConnection': kotlin.UninitializedPropertyAccessException: lateinit property rpcConnection has not been initialized
+[INFO ] 2020-11-20T05:31:39,325 [Thread-3] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b6ec132: startup date [Fri Nov 20 00:24:03 EST 2020]; root of context hierarchy
+[INFO ] 2020-11-20T05:31:39,329 [Thread-3] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[WARN ] 2020-11-20T05:31:39,331 [Thread-3] CommonAnnotationBeanPostProcessor - Invocation of destroy method failed on bean with name 'nodeRPCConnection': kotlin.UninitializedPropertyAccessException: lateinit property rpcConnection has not been initialized
