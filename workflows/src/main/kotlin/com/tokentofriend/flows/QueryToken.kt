@@ -35,7 +35,7 @@ class QueryToken(val uuid: String, private val recipientEmail: String) : FlowLog
             return "\nERROR: Internal Error"
         }
          if (underlineState.recipient == recipientEmail){
-             return "\nCreator of the Token: " + underlineState.Issuer +
+             return "\nCreator of the Token: " + underlineState.issuer +
                      "\nMessage: " + underlineState.message
          }else{
              return "\nToken found, but the recipient email is not matched. Please try again"

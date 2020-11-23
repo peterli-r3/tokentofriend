@@ -11,7 +11,7 @@ import com.tokentofriend.contracts.CustomTokenContract
 // * State *
 // *********
 @BelongsToContract(CustomTokenContract::class)
-data class CustomTokenState(val Issuer: String,
+data class CustomTokenState(val issuer: String,
                             val recipient : String,
                             val message: String,
                             val maintainer: Party,
